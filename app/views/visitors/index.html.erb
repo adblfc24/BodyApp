@@ -1,0 +1,8 @@
+<h3>Welcome to the Human Body</h3>
+<% if user_signed_in? %>
+Your easy to use interactive guide to the human body.
+To begin select an option from the menu bar across the top
+<% else %>
+Please login or create an account to access our educational tool
+<% end %>
+<p><%= link_to 'Users:', users_path %> <%= User.count %> registered</p>
