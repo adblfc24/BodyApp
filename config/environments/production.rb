@@ -80,4 +80,5 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  Rails.application.config.assets.precompile += %w( surveyor_all.css )
 end
