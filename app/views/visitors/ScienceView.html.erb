@@ -55,14 +55,10 @@
                     </li>
                     <li>
                       <% if user_signed_in? %>
-             <%= link_to 'Sports View', visitors_SportsView_path %></li>
+             <%= link_to 'Sports View', photos_path %></li>
                   
                     <li class="page-scroll">
-                        <%= link_to 'Science View', visitors_ScienceView_path %>
-                    </li>
-                  v
-                    <li class="page-scroll">
-                      <%= link_to 'Add Photo', new_photo_path %>
+                        <%= link_to 'Science View', sphts_path %>
                     </li>
                   <li class="page-scroll">
                   <%= link_to 'Edit account', edit_user_registration_path %>

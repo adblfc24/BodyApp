@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <div class="col-xs-9">
+    <%= image_tag(@spht.file_url, :width => "100%") if @spht.file.present? %>
+  </div>
+
+  <div class="col-xs-3">
+    <p><b>Title: </b><%= @spht.title%></p>
+    <p><b>Description: </b><%= @spht.description %></p>
+    <p>
+      <%= link_to 'Edit', edit_spht_path(@spht) %> |
+      <%= link_to 'Delete', @spht, confirm: 'Are you sure?', method: :delete %> |
+      <%= link_to 'Back', sphts_path %>
+    </p>
+  </div>
+</div>
