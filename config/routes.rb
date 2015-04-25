@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  resources :scphotos
-
   resources :photos
 
   mount Surveyor::Engine => "/surveys", :as => "surveyor"
